@@ -1,4 +1,4 @@
-import application.hasmap.HashMap;
+import application.tips.hasmap.HashMap;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

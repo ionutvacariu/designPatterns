@@ -1,6 +1,5 @@
-package application.hasmap;
+package application.tips.hasmap;
 
-import java.util.List;
 import java.util.Objects;
 
 public class HashMap<K, V> {

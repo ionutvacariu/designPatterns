@@ -1,9 +1,4 @@
-package application.hasmap;
-
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+package application.tips.hasmap;
 
 public class Entry<K, V> {
     //key and value of current element
