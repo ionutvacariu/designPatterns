@@ -1,3 +1,5 @@
+package testeUnitare;
+
 import application.tips.hasmap.HashMap;
 import org.junit.Test;
 
