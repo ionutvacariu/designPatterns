@@ -1,5 +1,8 @@
 package application.tips.linkedList;
 
+import java.util.ArrayList;
+import java.util.function.Predicate;
+
 public class LinkedList<V> {
     private Node head;
 
@@ -46,23 +49,53 @@ public class LinkedList<V> {
         }
 
 
+        iterateListAndRemove(value, currentNode);
+        return this;
+    }
+
+    public LinkedList re(){
+        this.head  = reverse(this.head);
+
+        return this;
+    }
+
+    public static Node reverse(Node currentNode) {
+        if (currentNode == null) {
+            return currentNode;
+        }
+
+        // last node or only one node
+        if (currentNode.next == null) {
+            return currentNode;
+        }
+
+        Node newHeadNode = reverse(currentNode.next);
+
+        // change references for middle chain
+        currentNode.next.next = currentNode;
+        currentNode.next = null;
+
+        // send back new currentNode node in every recursion
+        return newHeadNode;
+    }
+
+
+    private void iterateListAndRemove(V value, Node currentNode) {
         Node previous = this.head;
         while (currentNode.next != null) {
             if (currentNode.value.equals(value)) {
                 //found it
                 previous.next = currentNode.next;
-                return this;
+                return;
             } else {
                 previous = previous.next;
                 currentNode = currentNode.next;
             }
         }
         if (currentNode.value.equals(value)) {
-            last = previous;
+            this.last = previous;
+            this.last.next = null;
         }
-
-
-        return this;
     }
 
     public Node getHead() {
@@ -92,5 +125,13 @@ public class LinkedList<V> {
         }
         sb.append(last.value + " ");
         return sb.toString();
+    }
+
+    public static void printSinglyLinkedList(Node node,
+                                             String sep) {
+        while (node != null) {
+            System.out.print(String.valueOf(node.value) + sep);
+            node = node.next;
+        }
     }
 }
