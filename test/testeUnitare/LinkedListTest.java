@@ -15,15 +15,23 @@ public class LinkedListTest {
 
         linkedList.add(Integer.valueOf(12));
         linkedList.add(2);
+
+        for (int i = 0; i < 30; i++) {
+            linkedList.add(i);
+        }
         linkedList.add(33);
 
+        System.out.println(linkedList);
         assertEquals(12, linkedList.getHead().getValue());
         assertEquals(33, linkedList.getLast().getValue());
 
-        java.util.LinkedList<Integer> ii = new java.util.LinkedList<>();
-        ii.add(12);
-        ii.add(2,33);
 
+        linkedList.remove(4);
+        linkedList.remove(5);
+        linkedList.remove(12);
+        linkedList.remove(25);
 
+        linkedList.remove(33);
+        System.out.println(linkedList);
     }
 }
