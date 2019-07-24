@@ -1,6 +1,6 @@
 package testeUnitare;
 
-import application.tips.hasmap.HashMap;
+import application.javaRecap.hasmap.HashMap;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
