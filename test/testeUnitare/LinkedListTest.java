@@ -1,7 +1,6 @@
 package testeUnitare;
 
-import application.tips.linkedList.LinkedList;
-import application.tips.linkedList.Node;
+import application.javaRecap.linkedList.LinkedList;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -23,6 +22,7 @@ public class LinkedListTest {
         linkedList.add(33);
 
         System.out.println(linkedList);
+
         assertEquals(12, linkedList.getHead().getValue());
         assertEquals(33, linkedList.getLast().getValue());
 
@@ -34,16 +34,23 @@ public class LinkedListTest {
 
         linkedList.remove(33);
         System.out.println(linkedList);
+
+
+        System.out.println("cel mai reverse");
         linkedList = new LinkedList<>();
         for (int i = 1; i < 8; i++) {
             linkedList.add(i);
         }
-        LinkedList re = linkedList.re();
-        System.out.println(re);
+        linkedList.reverse();
         System.out.println(linkedList);
-        //Node reverse = LinkedList.reverse(linkedList.getHead());
 
-        //linkedList.printSinglyLinkedList(reverse," ");
-        //System.out.println(linkedList);
+
+        System.out.println("cel mai recursiv");
+        linkedList = new LinkedList<>();
+        for (int i = 1; i < 8; i++) {
+            linkedList.add(i);
+        }
+        linkedList.re();
+        System.out.println(linkedList);
     }
 }
