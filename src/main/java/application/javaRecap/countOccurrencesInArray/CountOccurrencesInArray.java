@@ -1,6 +1,5 @@
-package application.tips.countOccurrencesInArray;
+package application.javaRecap.countOccurrencesInArray;
 
-import application.tips.linkedList.LinkedList;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,7 +20,7 @@ public class CountOccurrencesInArray {
             }
         }
         System.out.println(integers);
-        for(Map.Entry entry :occ.entrySet()){
+        for (Map.Entry entry : occ.entrySet()) {
             System.out.println(entry.getKey() + "   " + entry.getValue());
         }
 

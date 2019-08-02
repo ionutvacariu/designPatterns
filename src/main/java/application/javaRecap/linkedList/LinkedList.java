@@ -79,7 +79,7 @@ public class LinkedList<V> {
 
     public void reverse() {
         Node prev = null;
-        Node next;
+        Node next ;
         Node current = this.head;
         while (current != null) {
             next = current.next; // foloseste "al 3lea pahar"
