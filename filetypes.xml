@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="Enum" type="CLASS" />
       <mapping pattern="Main" type="PLAIN_TEXT" />
+      <mapping pattern="Conturi" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
