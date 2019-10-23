@@ -1,14 +1,18 @@
 package tourists;
 
-import sun.security.krb5.internal.crypto.Des;
-
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Application {
     private static ArrayList<Destination> destinations;
 
 
-    public static void main(String[] args) {
-     //login
+    public static void main(String[] args) throws FileNotFoundException {
+        //login
+        File file = new File(args[0]);
+        Scanner sc = new Scanner(file);
+
     }
 }
