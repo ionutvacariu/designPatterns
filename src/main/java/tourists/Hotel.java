@@ -1,6 +1,6 @@
 package tourists;
 
-public class Holtel {
+public class Hotel {
     private int availableRooms;
     private double price;
 }
