@@ -5,6 +5,7 @@
       <mapping pattern="destinatii" type="PLAIN_TEXT" />
       <mapping pattern="conturi2" type="PLAIN_TEXT" />
       <mapping pattern="Main" type="PLAIN_TEXT" />
+      <mapping pattern="login" type="PLAIN_TEXT" />
       <mapping pattern="Conturi" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
