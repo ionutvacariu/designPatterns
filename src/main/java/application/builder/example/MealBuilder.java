@@ -1,7 +1,7 @@
 package application.builder.example;
 
 import application.builder.example.item.Meal;
-import application.builder.example.item.Pepsi;
+import application.builder.example.itemType.Pepsi;
 import application.builder.example.itemType.ChickenBurger;
 import application.builder.example.itemType.Coke;
 import application.builder.example.itemType.VegBurger;

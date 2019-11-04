@@ -90,7 +90,7 @@ public class LIS {
         //System.out.println("Length of lis is " + lis(arr, n) + "\n");
         findLIS(A, A.length);
 
-        // lisWithHash(arr, arr.length);
+       //  lisWithHash(arr, arr.length);
 
     }
 

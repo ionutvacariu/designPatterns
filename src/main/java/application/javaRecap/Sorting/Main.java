@@ -17,12 +17,9 @@ public class Main {
         personList.add(p2);
         personList.add(p1);
 
-        Comparator<Person> comparator = new Comparator<Person>() {
-            @Override
-            public int compare(Person o1, Person o2) {
-                if (o1.getVarsta() == o2.getVarsta()) return 0;
-                return o1.getVarsta() < o2.getVarsta() ? -1 : 1;
-            }
+        Comparator<Person> comparator = (o1, o2) -> {
+            if (o1.getVarsta() == o2.getVarsta()) return 0;
+            return o1.getVarsta() < o2.getVarsta() ? -1 : 1;
         };
 
 

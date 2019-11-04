@@ -76,6 +76,10 @@
             <artifactId>cloning</artifactId>
             <version>1.9.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
+        <!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
+
+
 
     </dependencies>
 <!--    <repositories>

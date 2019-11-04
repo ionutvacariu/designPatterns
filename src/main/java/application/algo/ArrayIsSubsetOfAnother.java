@@ -9,7 +9,7 @@ import java.util.Map;
 public class ArrayIsSubsetOfAnother {
 
     public static void main(String[] args) {
-        int arr1[] = {11, 1, 13, 21, 3, 7};
+        int arr1[] = {11, 1, 13, 21, 3, 7,7};
         int arr2[] = {11, 3, 7, 1};
 
         int m = arr1.length;
@@ -42,7 +42,7 @@ public class ArrayIsSubsetOfAnother {
             Integer integer = map1.get(arr1[i]);
 
             if (integer != null) {
-                map1.put(integer, ++integer);
+                map1.put(arr1[i], ++integer);
             } else map1.put(arr1[i], 0);
         }
 
