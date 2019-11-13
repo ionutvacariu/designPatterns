@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="Enum" type="CLASS" />
       <mapping pattern="destinatii" type="PLAIN_TEXT" />
+      <mapping pattern="userSiParola" type="PLAIN_TEXT" />
       <mapping pattern="conturi2" type="PLAIN_TEXT" />
       <mapping pattern="Main" type="PLAIN_TEXT" />
       <mapping pattern="login" type="PLAIN_TEXT" />
