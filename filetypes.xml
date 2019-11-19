@@ -8,6 +8,7 @@
       <mapping pattern="Main" type="PLAIN_TEXT" />
       <mapping pattern="login" type="PLAIN_TEXT" />
       <mapping pattern="Conturi" type="PLAIN_TEXT" />
+      <mapping pattern="bookHistory" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
