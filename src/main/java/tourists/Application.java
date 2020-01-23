@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Application {
     private static ArrayList<Destination> destinations;
+    static StringBuffer stringBufferOfData = new StringBuffer();
 
 
     public static void main(String[] args) throws FileNotFoundException {
@@ -16,6 +17,32 @@ public class Application {
         Scanner sc = new Scanner(file);
         destinations = new ArrayList<>();
         Destination d = new Destination();
+
+
+        populateDestinations(sc, d);
+        printDestinations();
+
+    }
+
+    private static void printDestinations() {
+        for (Destination destination : destinations) {
+            System.out.println(destination.getCountry());
+            for (City c : destination.getCities()) {
+                System.out.println("\t" + c.getName());
+                for (Hotel h : c.getHotels()) {
+                    System.out.println("\t\t" + h.getName());
+                    System.out.println("\t\t\t" + h.getAvailableRooms());
+                    System.out.println("\t\t\t" + h.getPrice());
+                    System.out.println("\t\t\t" + h.getRating());
+                    if (h instanceof GuestHouse) {
+                        System.out.println("\t\t\t" + ((GuestHouse) h).getSpecialFood());
+                    }
+                }
+            }
+        }
+    }
+
+    private static void populateDestinations(Scanner sc, Destination d) {
         while (sc.hasNext()) {
 
             String country;//= sc.next();
@@ -82,22 +109,5 @@ public class Application {
                 }
             }
         }
-        List<Hotel> hotelList = new ArrayList<>();
-        for (Destination destination : destinations) {
-            System.out.println(destination.getCountry());
-            for (City c : destination.getCities()) {
-                System.out.println("\t" + c.getName());
-                for (Hotel h : c.getHotels()) {
-                    System.out.println("\t\t" + h.getName());
-                    System.out.println("\t\t\t" + h.getAvailableRooms());
-                    System.out.println("\t\t\t" + h.getPrice());
-                    System.out.println("\t\t\t" + h.getRating());
-                    if (h instanceof GuestHouse) {
-                        System.out.println("\t\t\t" + ((GuestHouse) h).getSpecialFood());
-                    }
-                }
-            }
-        }
-
     }
 }
