@@ -20,7 +20,7 @@
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <version>2.3.1</version>
-          <!--  <scope>test</scope>-->
+            <!--  <scope>test</scope>-->
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
@@ -40,6 +40,13 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
             <version>2.1.1.RELEASE</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/wsdl4j/wsdl4j -->
+        <dependency>
+            <groupId>wsdl4j</groupId>
+            <artifactId>wsdl4j</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -78,22 +85,40 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
         <!-- https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4 -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.ws/spring-ws-core -->
+        <dependency>
+            <groupId>org.springframework.ws</groupId>
+            <artifactId>spring-ws-core</artifactId>
+            <version>2.2.0.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>5.2.3.RELEASE</version>
+        </dependency>
 
 
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.2.3.RELEASE</version>
+        </dependency>
 
     </dependencies>
-<!--    <repositories>
-        <repository>
-            <id>maven</id>
-            <name>Spring Framework Maven Milestone Repository</name>
-            <url>http://repo.spring.io/milestone/</url>
-        </repository>
-        <repository>
-            <id>maven2</id>
-            <name>Spring Framework Maven Milestone Repository</name>
-            <url>http://central.maven.org/maven2/</url>
-        </repository>
-    </repositories>-->
+    <!--    <repositories>
+            <repository>
+                <id>maven</id>
+                <name>Spring Framework Maven Milestone Repository</name>
+                <url>http://repo.spring.io/milestone/</url>
+            </repository>
+            <repository>
+                <id>maven2</id>
+                <name>Spring Framework Maven Milestone Repository</name>
+                <url>http://central.maven.org/maven2/</url>
+            </repository>
+        </repositories>-->
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -105,6 +130,25 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxb2-maven-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>xjc</id>
+                        <goals>
+                            <goal>xjc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <schemaDirectory>/Users/ivacariu/Desktop/DesignPatterns/src/main/resources/
+                    </schemaDirectory>
+                    <outputDirectory>/Users/ivacariu/Desktop/DesignPatterns/src/main/java/</outputDirectory>
+                    <clearOutputDir>false</clearOutputDir>
+                </configuration>
             </plugin>
         </plugins>
     </build>

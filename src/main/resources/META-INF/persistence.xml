@@ -5,7 +5,7 @@
              version="2.1">
     <persistence-unit name="manager" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
-        <class>application.database.Shape</class>
+        <class>application.spring.database.Shape</class>
         <properties>
 
             <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>

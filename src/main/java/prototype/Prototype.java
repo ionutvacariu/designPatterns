@@ -1,6 +1,6 @@
 package prototype;
 
-import application.database.Shape;
+import application.spring.database.Shape;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
