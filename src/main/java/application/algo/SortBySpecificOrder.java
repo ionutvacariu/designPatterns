@@ -1,10 +1,9 @@
 package application.algo;
 
 
-import com.sun.tools.hat.internal.util.Comparer;
-import com.sun.tools.hat.internal.util.VectorSorter;
-
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class SortBySpecificOrder {
     static Map<Character, Integer> order = new HashMap<>();

@@ -21,7 +21,7 @@ public class SoapWebServiceConfig extends WsConfigurerAdapter {
         MessageDispatcherServlet servlet = new MessageDispatcherServlet();
         servlet.setApplicationContext(context);
         servlet.setTransformWsdlLocations(true);
-        return new ServletRegistrationBean(servlet, "/soapWS/*");
+        return new ServletRegistrationBean<>(servlet, "/soapWS/*");
     }
 
 
@@ -30,13 +30,13 @@ public class SoapWebServiceConfig extends WsConfigurerAdapter {
         return new SimpleXsdSchema(new ClassPathResource("users.xsd"));
     }
 
-    @Bean
+    @Bean(name = "mySoap")
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema userSchema) {
 
         DefaultWsdl11Definition definition = new DefaultWsdl11Definition();
         definition.setSchema(userSchema);
         definition.setLocationUri("/soapWS");
-        definition.setPortTypeName("oriceportblea");
+        definition.setPortTypeName("UserEndpoint");
         definition.setTargetNamespace("http://ws");
         return definition;
     }

@@ -1,6 +1,5 @@
 package application.Singleton;
 
-import sun.management.jmxremote.SingleEntryRegistry;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

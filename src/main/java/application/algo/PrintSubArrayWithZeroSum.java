@@ -1,6 +1,5 @@
 package application.algo;
 
-import javafx.util.Pair;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,7 +12,7 @@ import java.util.Map;
  */
 public class PrintSubArrayWithZeroSum {
 
-
+/*
     public static void main(String args[]) {
         int[] arr = {6, 3, -1, -3, 4, -2, 2, 4, 6, -12, -7};
         int n = arr.length;
@@ -52,5 +51,5 @@ public class PrintSubArrayWithZeroSum {
 
         }
         return sub;
-    }
+    }*/
 }
