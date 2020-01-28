@@ -8,11 +8,9 @@
     <artifactId>DesignPatterns</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
-
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <scope>test</scope>
             <version>1.4.197</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.hsqldb/hsqldb -->
@@ -207,8 +205,7 @@
                     </execution>
                 </executions>
             </plugin>
-    </plugins>
-
+        </plugins>
 
 
     </build>
