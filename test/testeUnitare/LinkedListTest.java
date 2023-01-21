@@ -1,6 +1,6 @@
 package testeUnitare;
 
-import application.javaRecap.linkedList.LinkedList;
+import javaRecap.linkedList.LinkedList;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

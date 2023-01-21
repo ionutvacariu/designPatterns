@@ -1,6 +1,6 @@
 package prototype;
 
-import application.spring.database.Shape;
+import spring.usage.simple.app.controller.database.Shape;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Component;

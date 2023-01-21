@@ -186,7 +186,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>application.spring.Application</mainClass>
+                            <mainClass>spring.usage.simple.app.controller.Application</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
