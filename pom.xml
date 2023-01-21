@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.target>16</maven.compiler.target>
-        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
         <spring.boot.version>3.0.2</spring.boot.version>
         <spring.version>6.0.4</spring.version>
         <spring.ws-core.version>4.0.1</spring.ws-core.version>

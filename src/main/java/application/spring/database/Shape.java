@@ -1,6 +1,6 @@
 package application.spring.database;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "shape")

@@ -1,8 +1,6 @@
 package application.algo;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.HashMap;
-import java.util.stream.IntStream;
 
 public class IsogramString {
 

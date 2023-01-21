@@ -1,10 +1,9 @@
 package hardcoretomcatserver;
 
+import jakarta.annotation.PostConstruct;
 import org.apache.catalina.Context;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.startup.Tomcat;
-
-import javax.annotation.PostConstruct;
 
 public class TomcatLauncher {
 

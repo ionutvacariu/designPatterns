@@ -3,7 +3,6 @@ package endpoint;
 import org.springframework.stereotype.Service;
 import ws.User;
 
-import javax.annotation.PostConstruct;
 import java.util.HashMap;
 import java.util.Map;
 
