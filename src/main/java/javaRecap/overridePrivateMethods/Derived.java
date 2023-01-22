@@ -7,6 +7,12 @@ public class Derived extends Base {
 
     public static void main(String[] args) {
         Base obj = new Derived();
-      // obj.fun();
+        // observam ca nu putem -- sa accesam fun din Base
+//        obj.fun();
+
+        //dar putem accesa fun din derived
+        Derived objD = new Derived();
+        objD.fun();
+
     }
 }

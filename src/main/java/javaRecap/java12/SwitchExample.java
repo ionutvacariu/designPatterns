@@ -2,7 +2,7 @@ package javaRecap.java12;
 
 public class SwitchExample {
 
-  /*  public enum FastFood {
+    public enum FastFood {
         MC_DONALDS, BURGER_KING, KFC;
     }
 
@@ -11,7 +11,7 @@ public class SwitchExample {
 
     }
 
-// use -> instead of :  break;
+    // use -> instead of :  break;
     public static int increase(FastFood fastFood) {
         int increase = switch (fastFood) {
             case BURGER_KING -> 2;
@@ -22,6 +22,6 @@ public class SwitchExample {
 
         return increase;
 
-    }*/
+    }
 }
 

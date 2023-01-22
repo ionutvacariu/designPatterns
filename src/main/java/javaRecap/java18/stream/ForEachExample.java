@@ -17,31 +17,25 @@ public class ForEachExample {
         for (int i = 0; i < 10; i++) myList.add(i);
 
 
-     myList.stream().filter(i -> {
+        Integer hi = myList.stream().filter(i -> {
             System.out.println("hi");
             return true;
-        }).findFirst();
+        }).findFirst().orElse(2);
 
 
-
-        myList.parallelStream().forEach(i -> System.out.println(i));
+        myList.parallelStream().forEach(System.out::println);
 
         Stream<Integer> integerStream = myList.stream().map(integer -> integer * 2);
 
-        integerStream.forEach(i -> System.out.println(i));
-        List<Integer> res = myList.stream().map(integer -> integer * 2).collect(Collectors.toList());
+        integerStream.forEach(System.out::println);
+        List<Integer> res = myList.stream().map(integer -> integer * 2).toList();
 
-        res.forEach(i  -> System.out.println(i));
+        res.forEach(System.out::println);
 
 
         myList.forEach(ForEachExample::accept);
 
-        myList.forEach(new Consumer<Integer>() {
-            @Override
-            public void accept(Integer integer) {
-                System.out.println(integer);
-            }
-        });
+        myList.forEach(System.out::println);
 
     }
 
